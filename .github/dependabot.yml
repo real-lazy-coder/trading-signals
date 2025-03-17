@@ -25,6 +25,9 @@ updates:
       - dependency-name: '@types/node'
         versions:
           - '>= 20'
+      - dependency-name: 'eslint'
+        versions:
+          - '>= 9'
     commit-message:
       prefix: chore
       include: scope
