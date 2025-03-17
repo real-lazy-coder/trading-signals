@@ -290,7 +290,7 @@ describe('PSAR (Big.js version)', () => {
     expect(result?.toNumber()).toBeLessThan(13);
   });
 
-  it('adjust the SAR when the previous low is lower than the pre-previous low', () => {
+  it('adjusts the SAR when the previous low is lower than the pre-previous low', () => {
     const psar = new PSAR({accelerationMax: 0.2, accelerationStep: 0.02});
     const prePreviousLow = 8;
     const previousLow = 7;
@@ -706,7 +706,7 @@ describe('FasterPSAR (Number version)', () => {
     expect(psar.getResultOrThrow().toString()).toBe('5.99');
   });
 
-  it('adjust the SAR when the previous high is greater than the pre-previous high', () => {
+  it('adjusts the SAR when the previous high is greater than the pre-previous high', () => {
     const psar = new PSAR({accelerationMax: 0.2, accelerationStep: 0.02});
     const prePreviousHigh = 10;
     const previousHigh = 11;
